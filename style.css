@@ -1,0 +1,184 @@
+.frame {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.frame .div {
+  background: linear-gradient(90deg, #003366 0%, #006633 100%);
+  width: 828px;
+  height: 1792px;
+  position: relative;
+}
+
+.frame .div-2 {
+  position: absolute;
+  width: 732px;
+  height: 801px;
+  top: 495px;
+  left: 48px;
+  background-color: #121212;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame .vector {
+  position: absolute;
+  width: 167px;
+  height: 120px;
+  top: 100px;
+  left: 283px;
+}
+
+.frame .text-wrapper {
+  top: 319px;
+  left: 178px;
+  color: #ffffff;
+  font-size: 38px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "SF Pro Text-Medium", Helvetica;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .amount-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 370px;
+}
+
+.frame .editable-amount {
+  font-family: "SF Pro Text-Medium", Helvetica;
+  font-weight: 500;
+  font-size: 60px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  width: 300px;
+  text-align: center;
+}
+
+.frame .editable-amount:focus {
+  outline: none;
+}
+
+.frame .text-wrapper-4 {
+  top: 485px;
+  left: 267px;
+  color: #838383;
+  font-size: 29px;
+  position: absolute;
+  font-family: "SF Pro Text-Medium", Helvetica;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .name-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 540px;
+  width: 100%;
+}
+
+.frame .editable-name {
+  font-family: "SF Pro Text-Medium", Helvetica;
+  font-weight: 500;
+  font-size: 29px;
+  color: #838383;
+  background: transparent;
+  border: none;
+  text-align: center;
+  width: 400px;
+}
+
+.frame .editable-name:focus {
+  outline: none;
+  color: #838383; /* Цвет текста останется серым при фокусе */
+}
+
+.frame .div-3 {
+  position: absolute;
+  width: 317px;
+  height: 93px;
+  top: 662px;
+  left: 40px;
+  background-color: #242424;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.frame .text-wrapper-6 {
+  top: 27px;
+  left: 177px;
+  color: #ffffff;
+  font-size: 32px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "SF Pro Text-Medium", Helvetica;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .img {
+  position: absolute;
+  width: 43px;
+  height: 54px;
+  top: 20px;
+  left: 104px;
+}
+
+.frame .div-wrapper {
+  position: absolute;
+  width: 317px;
+  height: 93px;
+  top: 662px;
+  left: 377px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.frame .text-wrapper-7 {
+  top: 27px;
+  left: 75px;
+  color: #000000;
+  font-size: 32px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "SF Pro Text-Medium", Helvetica;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .div-4 {
+  position: absolute;
+  width: 295px;
+  height: 11px;
+  top: 1766px;
+  left: 267px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.frame .text-wrapper-2:hover {
+  cursor: pointer;
+}
+
+.frame .text-wrapper-5:hover {
+  cursor: pointer;
+}
