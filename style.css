@@ -1,24 +1,40 @@
+/* Общее сбрасывающее стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Убирает горизонтальные полосы прокрутки */
+}
+
 .frame {
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: 100vw; /* Используйте 100% ширины экрана */
 }
 
 .frame .div {
   background: linear-gradient(90deg, #003366 0%, #006633 100%);
-  width: 828px;
-  height: 1792px;
+  width: 100%; /* Ширина элемента по ширине экрана */
+  max-width: 828px; /* Максимальная ширина контейнера */
+  height: auto; /* Высота автоматически подстраивается под содержимое */
   position: relative;
 }
 
 .frame .div-2 {
   position: absolute;
-  width: 732px;
-  height: 801px;
-  top: 495px;
-  left: 48px;
+  width: 100%; /* Ширина по ширине родительского элемента */
+  max-width: 732px; /* Максимальная ширина элемента */
+  height: auto; /* Высота автоматически подстраивается под содержимое */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #121212;
   border-radius: 30px;
   overflow: hidden;
@@ -33,19 +49,20 @@
   width: 167px;
   height: 120px;
   top: 100px;
-  left: 283px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .frame .text-wrapper {
+  position: absolute;
   top: 319px;
-  left: 178px;
+  left: 50%;
+  transform: translateX(-50%);
   color: #ffffff;
   font-size: 38px;
   white-space: nowrap;
-  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
-  letter-spacing: 0;
   line-height: normal;
 }
 
@@ -54,17 +71,19 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 370px;
+  top: 370px; /* Регулируйте по необходимости */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .frame .editable-amount {
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 60px;
   color: #ffffff;
   background: transparent;
   border: none;
-  width: 300px;
+  width: 300px; /* Увеличенная ширина поля ввода */
   text-align: center;
 }
 
@@ -73,24 +92,35 @@
 }
 
 .frame .text-wrapper-4 {
+  position: absolute;
   top: 485px;
-  left: 267px;
+  left: 50%;
+  transform: translateX(-50%);
   color: #838383;
   font-size: 29px;
-  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
-  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-5 {
+  position: absolute;
+  top: 540px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #838383;
+  font-size: 29px;
+  font-family: "SF Pro Text-Medium", Helvetica;
+  font-weight: 500;
   line-height: normal;
 }
 
 .frame .name-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
-  top: 540px;
-  width: 100%;
+  top: 590px; /* Регулируйте по необходимости */
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto; /* Динамическая ширина */
 }
 
 .frame .editable-name {
@@ -100,14 +130,9 @@
   color: #838383;
   background: transparent;
   border: none;
-  width: 500px; /* Увеличьте ширину по необходимости */
+  min-width: 300px; /* Минимальная ширина */
   text-align: center;
-  padding: 10px; /* Добавьте отступы */
-}
-
-.frame .editable-name:focus {
-  outline: none;
-  color: #838383; /* Цвет текста останется серым при фокусе */
+  white-space: nowrap; /* Запрещает перенос текста на следующую строку */
 }
 
 .frame .div-3 {
@@ -122,15 +147,14 @@
 }
 
 .frame .text-wrapper-6 {
+  position: absolute;
   top: 27px;
-  left: 177px;
+  left: 50%;
+  transform: translateX(-50%);
   color: #ffffff;
   font-size: 32px;
-  white-space: nowrap;
-  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
-  letter-spacing: 0;
   line-height: normal;
 }
 
@@ -139,7 +163,8 @@
   width: 43px;
   height: 54px;
   top: 20px;
-  left: 104px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .frame .div-wrapper {
@@ -147,22 +172,22 @@
   width: 317px;
   height: 93px;
   top: 662px;
-  left: 377px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #ffffff;
   border-radius: 30px;
   overflow: hidden;
 }
 
 .frame .text-wrapper-7 {
+  position: absolute;
   top: 27px;
-  left: 75px;
+  left: 50%;
+  transform: translateX(-50%);
   color: #000000;
   font-size: 32px;
-  white-space: nowrap;
-  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
-  letter-spacing: 0;
   line-height: normal;
 }
 
@@ -171,15 +196,8 @@
   width: 295px;
   height: 11px;
   top: 1766px;
-  left: 267px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #ffffff;
   border-radius: 10px;
-}
-
-.frame .text-wrapper-2:hover {
-  cursor: pointer;
-}
-
-.frame .text-wrapper-5:hover {
-  cursor: pointer;
 }
