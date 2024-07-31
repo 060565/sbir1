@@ -100,9 +100,9 @@
   color: #838383;
   background: transparent;
   border: none;
-  width: 500px; /* Увеличьте ширину при необходимости */
+  width: 500px; /* Увеличьте ширину по необходимости */
   text-align: center;
-  white-space: nowrap; /* Убедитесь, что текст не переносится */
+  padding: 10px; /* Добавьте отступы */
 }
 
 .frame .editable-name:focus {
