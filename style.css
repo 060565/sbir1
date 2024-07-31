@@ -4,22 +4,21 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  min-height: 100vh; /* Используйте min-height вместо height */
 }
 
 .frame .div {
   background: linear-gradient(90deg, #003366 0%, #006633 100%);
-  width: 100%; /* Сделайте ширину 100%, чтобы она занимала весь экран */
-  min-height: 100vh; /* Замените фиксированную высоту на min-height */
+  width: 828px;
+  height: 1792px;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .frame .div-2 {
-  width: 90%; /* Используйте проценты для ширины */
-  max-width: 732px; /* Максимальная ширина */
+  position: absolute;
+  width: 732px;
+  height: 801px;
+  top: 495px;
+  left: 48px;
   background-color: #121212;
   border-radius: 30px;
   overflow: hidden;
@@ -27,29 +26,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px; /* Добавьте отступы */
-  box-sizing: border-box;
 }
 
 .frame .vector {
+  position: absolute;
   width: 167px;
   height: 120px;
-  margin-top: 20px; /* Используйте margin вместо абсолютного позиционирования */
+  top: 100px;
+  left: 283px;
 }
 
 .frame .text-wrapper {
+  top: 319px;
+  left: 178px;
   color: #ffffff;
   font-size: 38px;
+  white-space: nowrap;
+  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
-  margin-top: 20px; /* Используйте margin вместо абсолютного позиционирования */
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 .frame .amount-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px; /* Используйте margin вместо абсолютного позиционирования */
+  position: absolute;
+  top: 370px;
 }
 
 .frame .editable-amount {
@@ -68,19 +73,24 @@
 }
 
 .frame .text-wrapper-4 {
+  top: 485px;
+  left: 267px;
   color: #838383;
   font-size: 29px;
+  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
-  margin-top: 20px; /* Используйте margin вместо абсолютного позиционирования */
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 .frame .name-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 540px;
   width: 100%;
-  margin-top: 20px; /* Используйте margin вместо абсолютного позиционирования */
 }
 
 .frame .editable-name {
@@ -96,60 +106,79 @@
 
 .frame .editable-name:focus {
   outline: none;
-  color: #838383;
+  color: #838383; /* Цвет текста останется серым при фокусе */
 }
 
 .frame .div-3 {
-  width: 90%; /* Используйте проценты для ширины */
-  max-width: 317px; /* Максимальная ширина */
+  position: absolute;
+  width: 317px;
   height: 93px;
+  top: 662px;
+  left: 40px;
   background-color: #242424;
   border-radius: 30px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px; /* Используйте margin вместо абсолютного позиционирования */
 }
 
 .frame .text-wrapper-6 {
+  top: 27px;
+  left: 177px;
   color: #ffffff;
   font-size: 32px;
+  white-space: nowrap;
+  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 .frame .img {
+  position: absolute;
   width: 43px;
   height: 54px;
-  margin-left: 20px;
+  top: 20px;
+  left: 104px;
 }
 
 .frame .div-wrapper {
-  width: 90%; /* Используйте проценты для ширины */
-  max-width: 317px; /* Максимальная ширина */
+  position: absolute;
+  width: 317px;
   height: 93px;
+  top: 662px;
+  left: 377px;
   background-color: #ffffff;
   border-radius: 30px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px; /* Используйте margin вместо абсолютного позиционирования */
 }
 
 .frame .text-wrapper-7 {
+  top: 27px;
+  left: 75px;
   color: #000000;
   font-size: 32px;
+  white-space: nowrap;
+  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 .frame .div-4 {
-  width: 90%; /* Используйте проценты для ширины */
-  max-width: 295px; /* Максимальная ширина */
+  position: absolute;
+  width: 295px;
   height: 11px;
+  top: 1766px;
+  left: 267px;
   background-color: #ffffff;
   border-radius: 10px;
-  margin-top: 20px; /* Используйте margin вместо абсолютного позиционирования */
+}
+
+.frame .text-wrapper-2:hover {
+  cursor: pointer;
+}
+
+.frame .text-wrapper-5:hover {
+  cursor: pointer;
 }
