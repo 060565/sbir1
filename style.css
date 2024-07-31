@@ -1,40 +1,24 @@
-/* Общее сбрасывающее стили */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Убирает горизонтальные полосы прокрутки */
-}
-
 .frame {
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100vw; /* Используйте 100% ширины экрана */
+  width: 100%;
 }
 
 .frame .div {
   background: linear-gradient(90deg, #003366 0%, #006633 100%);
-  width: 100%; /* Ширина элемента по ширине экрана */
-  max-width: 828px; /* Максимальная ширина контейнера */
-  height: auto; /* Высота автоматически подстраивается под содержимое */
+  width: 828px;
+  height: 1792px;
   position: relative;
 }
 
 .frame .div-2 {
   position: absolute;
-  width: 100%; /* Ширина по ширине родительского элемента */
-  max-width: 732px; /* Максимальная ширина элемента */
-  height: auto; /* Высота автоматически подстраивается под содержимое */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 732px;
+  height: 801px;
+  top: 495px;
+  left: 48px;
   background-color: #121212;
   border-radius: 30px;
   overflow: hidden;
@@ -49,20 +33,19 @@ body {
   width: 167px;
   height: 120px;
   top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 283px;
 }
 
 .frame .text-wrapper {
-  position: absolute;
   top: 319px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 178px;
   color: #ffffff;
   font-size: 38px;
   white-space: nowrap;
+  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
+  letter-spacing: 0;
   line-height: normal;
 }
 
@@ -71,9 +54,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 370px; /* Регулируйте по необходимости */
-  left: 50%;
-  transform: translateX(-50%);
+  top: 370px;
 }
 
 .frame .editable-amount {
@@ -83,7 +64,7 @@ body {
   color: #ffffff;
   background: transparent;
   border: none;
-  width: 300px; /* Увеличенная ширина поля ввода */
+  width: 300px;
   text-align: center;
 }
 
@@ -92,35 +73,24 @@ body {
 }
 
 .frame .text-wrapper-4 {
-  position: absolute;
   top: 485px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 267px;
   color: #838383;
   font-size: 29px;
-  font-family: "SF Pro Text-Medium", Helvetica;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.frame .text-wrapper-5 {
   position: absolute;
-  top: 540px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #838383;
-  font-size: 29px;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
+  letter-spacing: 0;
   line-height: normal;
 }
 
 .frame .name-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 590px; /* Регулируйте по необходимости */
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto; /* Динамическая ширина */
+  top: 540px;
+  width: 100%;
 }
 
 .frame .editable-name {
@@ -130,9 +100,13 @@ body {
   color: #838383;
   background: transparent;
   border: none;
-  min-width: 300px; /* Минимальная ширина */
   text-align: center;
-  white-space: nowrap; /* Запрещает перенос текста на следующую строку */
+  width: 400px;
+}
+
+.frame .editable-name:focus {
+  outline: none;
+  color: #838383; /* Цвет текста останется серым при фокусе */
 }
 
 .frame .div-3 {
@@ -147,14 +121,15 @@ body {
 }
 
 .frame .text-wrapper-6 {
-  position: absolute;
   top: 27px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 177px;
   color: #ffffff;
   font-size: 32px;
+  white-space: nowrap;
+  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
+  letter-spacing: 0;
   line-height: normal;
 }
 
@@ -163,8 +138,7 @@ body {
   width: 43px;
   height: 54px;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 104px;
 }
 
 .frame .div-wrapper {
@@ -172,22 +146,22 @@ body {
   width: 317px;
   height: 93px;
   top: 662px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 377px;
   background-color: #ffffff;
   border-radius: 30px;
   overflow: hidden;
 }
 
 .frame .text-wrapper-7 {
-  position: absolute;
   top: 27px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 75px;
   color: #000000;
   font-size: 32px;
+  white-space: nowrap;
+  position: absolute;
   font-family: "SF Pro Text-Medium", Helvetica;
   font-weight: 500;
+  letter-spacing: 0;
   line-height: normal;
 }
 
@@ -196,8 +170,15 @@ body {
   width: 295px;
   height: 11px;
   top: 1766px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 267px;
   background-color: #ffffff;
   border-radius: 10px;
+}
+
+.frame .text-wrapper-2:hover {
+  cursor: pointer;
+}
+
+.frame .text-wrapper-5:hover {
+  cursor: pointer;
 }
